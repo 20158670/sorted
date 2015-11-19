@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BubbleSort {
 
 	public static void main(String[] args) {
-		int[] arr = new int[100];
+		int[] arr = new int[1000];
 		for (int x = 0; x<arr.length; x++){
 			arr[x] = (int)(Math.random()*1000);
 		}

@@ -1,5 +1,4 @@
 package sorted;
-//lalin's code
 public class QueueLalin {
 	private int maxSize;
 	private long[] queueArray;

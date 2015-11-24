@@ -1,5 +1,4 @@
 package sorted;
-//lalins code
 import java.util.Scanner;
 
 public class QueueControllerLalin {

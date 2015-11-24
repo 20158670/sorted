@@ -5,7 +5,6 @@ public class QueueLalin {
 	private int front;
 	private int rear;
 	private int nItems;
-	
 	public QueueLalin(int s){
 		maxSize=s;
 		queueArray=new long[maxSize];

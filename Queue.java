@@ -10,8 +10,6 @@ public class Queue {
 			queue[i] = (int)(Math.random()*100);
 			back++;
 		}
-		//add items
-		
 	}
 
 }

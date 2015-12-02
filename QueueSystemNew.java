@@ -38,6 +38,7 @@ public class QueueSystemNew {
 		}else if(choice == 4){
 			choice4(queue, choice);
 		}
+		sc.close();
 	}
 	public static void choice1(int[] queue){
 		System.out.println(queue[0]);
@@ -49,6 +50,7 @@ public class QueueSystemNew {
 		int position = num.nextInt();
 		System.out.println(queue[(position-1)]);
 		makingTheChoice(queue);
+		num.close();
 	}
 	public static void choice3(int[] queue, int back){
 		System.out.println("The first value is " + queue[0]);
@@ -77,7 +79,7 @@ public class QueueSystemNew {
 				back++;
 				System.out.println("Succesfully added a value to the end, the list now looks like: ");
 				System.out.println(Arrays.toString(queue));
-			}else if(type == "c"){
+			}else if(type.equalsIgnoreCase("c")){
 				System.out.println("Please enter your new value:");
 				Scanner input1 = new Scanner(System.in);
 				int value = input1.nextInt();

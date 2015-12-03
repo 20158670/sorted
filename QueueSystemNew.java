@@ -71,6 +71,7 @@ public class QueueSystemNew {
 	public static void choice4(int[] queue, int back){
 		System.out.println("Checking to see if adding a value is possible...");
 		if(back < queue.length){
+			@SuppressWarnings("resource")
 			Scanner input = new Scanner(System.in);
 			System.out.println("You can add a value in, would you like to add a random (r) or your own (c)?");
 			String type = input.toString();
@@ -81,12 +82,14 @@ public class QueueSystemNew {
 				System.out.println(Arrays.toString(queue));
 			}else if(type.equalsIgnoreCase("c")){
 				System.out.println("Please enter your new value:");
+				@SuppressWarnings("resource")
 				Scanner input1 = new Scanner(System.in);
 				int value = input1.nextInt();
 				queue[back+1] = value;
 			}
 		}else{
 			System.out.println("The queue is full would you like to remove a value? (y/n) ");
+			@SuppressWarnings("resource")
 			Scanner yn = new Scanner(System.in);
 			String remove = yn.toString();
 			if (remove == "y"){

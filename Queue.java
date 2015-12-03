@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Queue {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		int[] queue = new int [20];
 		int back = 0;
